@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 120px 1fr 50px;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar main'
+    'sidebar footer';
+    height: 100vh;
+}
+.header {
+    grid-area: header;
+    background-color: greenyellow;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+.main {
+    grid-area: main;
+    background-color: orange;   
+}
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+}
+.main {
+    display: grid;
+    grid-template-areas: 
+    'cards blocks'
+    'cards blocks';
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 350px 350px; /* Where the magic happens */
+    grid-auto-rows: 200px;
+    grid-gap: 30px;
+    margin: 30px;
+}
+.card {
+    background-color: blueviolet;
+}
+.blocks
+{
+    background-color: darkblue;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+}
+.block2 {
+    display: flex;
+}
+.mt-20 {
+    margin-top: 20px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1dd55a644d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <nav class="navigation">
+            <div class="logo">
+                <img src="./images/logo.png" alt="company logo" width="298px" height="80px">
+            </div>
+            <ul>
+                <li><a href="#"><span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="title">Dashboard</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-user-circle"></i></span>
+                    <span class="title">Customers</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-comments"></i></span>
+                    <span class="title">Messages</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-question-circle"></i></span>
+                    <span class="title">Help</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-cog"></i></span>
+                    <span class="title">Settings</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fas fa-unlock-alt"></i></span>
+                    <span class="title">Password</span></a></li>
+                <li><a href="#"><span class="icon"><i class="fa fa-sign-out"></i></span>
+                    <span class="title">Sign Out</span></a></li>
+            </ul>
+        </nav>
+        <section class="main">
+            <nav class="topbar">
+                <div class="toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+                <div class="search">
+                    <label for="searchbar">
+                    <input type="search" placeholder="Search...">
+                    <i class="fa fa-search"></i>
+                    </label>
+                </div>
+                    <div class="user">
+                        <img src="./images/pexels-anastasia-shuraeva-5704720.jpg" alt="user image" width="80px" height="80px">
+                    </div>
+            </nav>
+            <div class="box">
+                <div class="card">
+                    <div class="numbers">10,050</div>
+                    <div class="cardName">Daily Views</div>
+                    <div class="icon"><i class="fa fa-eye"></i></div>
+                </div>
+                <div class="card">
+                    <div class="numbers">820</div>
+                    <div class="cardName">Sales</div>
+                    <div class="icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                <div class="card">
+                    <div class="numbers">2,560</div>
+                    <div class="cardName">Comments</div>
+                    <div class="icon"><i class="fa fa-comment"></i></div>
+                </div>
+                <div class="card">
+                    <div class="numbers">$65,823</div>
+                    <div class="cardName">Earnings</div>
+                    <div class="icon"><i class="fa fa-usd"></i></div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="recent-orders">
+                    <header>
+                    <h2>Recent Orders</h2>
+                    <a href="#">View All</a>
+                    </header>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Payment</td>
+                            <td>Status</td>
+                            <td>Date Ordered</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2x Box Oranges</td>
+                            <td>$60</td>
+                            <td>Paid</td>
+                            <td>In Transit</td>
+                            <td>12-07-21</td>
+                        </tr>
+
+                        <tr>
+                            <td>6x Crate Apples</td>
+                            <td>$210</td>
+                            <td>Paid</td>
+                            <td>Delivered</td>
+                            <td>20-07-21</td>
+                        </tr>
+
+                        <tr>
+                            <td>2x Box Bananas</td>
+                            <td>$100</td>
+                            <td>Paid</td>
+                            <td>Shipped</td>
+                            <td>28-07-21</td>
+                        </tr>
+
+                        <tr>
+                            <td>Box of Olives</td>
+                            <td>$480</td>
+                            <td>Paid</td>
+                            <td>In Transit</td>
+                            <td>25-07-21</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            
+                <div class="recent-customers">
+                    <h2>Recent Customers</h2>
+                    <a href="#">View All</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

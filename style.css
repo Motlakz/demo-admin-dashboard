@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Nunito:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+body {
+    overflow-x: hidden;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.navigation {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: rgb(18, 18, 56);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active {
+    width: 60px;
+}
+.navigation ul {
+    position: absolute;
+    top: 11%;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    height: 13vh;
+}
+.navigation ul li:hover {
+    background-color: #483f85;
+}
+.icon,
+.title {
+    position: relative;
+    left: 8px;
+    display: block;
+    min-width: 60px;
+    height: 40px;
+    line-height: 60px;
+}
+.title {
+    bottom: 40px;
+    left: 60px;
+    line-height: 60px;
+    height: 30px;
+    white-space: nowrap;
+}
+.navigation a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(47, 213, 255);
+    font-size: 20px;
+}
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    font-weight: 600;
+    background-color: rgba(230, 187, 150, 0.973);
+    transition: 0.5s;
+}
+.main.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.main .topbar {
+    width: 100%;
+    background: peachpuff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 45px;
+    color:rgb(18, 18, 56);
+}
+.toggle::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 45px;
+    text-align: center;
+}
+.search {
+    position: absolute;
+    left: 32%;
+    width: 400px;
+    margin: 0 10px;
+}
+.search label input {
+    padding: 10px;
+    padding-left: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #9a9c9c;
+}
+.search i {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #808080;
+}
+.user img {
+    position: absolute;
+    left: 90%;
+    border-radius: 50%;
+    top: 5px;
+    width: 70px;
+    height: 70px;
+}
+.box {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.box .card {
+    position: relative;
+    background: peachpuff;
+    padding: 20px;
+    margin: 15px;
+    display: grid;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.box .card:hover {
+    transform: scale(1.2);
+}
+.numbers {
+    position: relative;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.cardName {
+    color: #808080;
+}
+.card .icon {
+    color:rgb(27, 112, 133);
+    font-size: 1.3em;
+    text-align: center;
+    padding-right: 15px;
+}
+.details {
+    position: absolute;
+    right: 11.8%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.details .recent-orders {
+    position: relative;
+    left: 120px;
+    display: grid;
+    min-height: 420px;
+    background: peachpuff;
+    padding: 30px;
+}
+.recent-orders table td {
+    background: #808080;
+    border: 3px solid #fff;
+    padding: 15px;
+}
+.recent-orders table thead {
+    color:rebeccapurple;
+    font-size: 20px;
+}
+.recent-orders header {
+    display: flex;
+    position: relative;
+    right: 13em;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.recent-orders a {
+    position: relative;
+    left: 25em;
+    bottom: 5px;
+    background:rebeccapurple;
+    color:rgb(47, 213, 255);
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
