@@ -21,22 +21,17 @@
 }
 .main {
     grid-area: main;
-    background-color: orange;   
+    background-color: orange;  
+    display: flex; 
 }
 .footer {
     grid-area: footer;
     background-color: yellow;
 }
-.main {
-    display: grid;
-    grid-template-areas: 
-    'cards blocks'
-    'cards blocks';
-}
 
 .cards {
     display: grid;
-    grid-template-columns: 350px 350px; /* Where the magic happens */
+    grid-template-columns: 350px 350px;
     grid-auto-rows: 200px;
     grid-gap: 30px;
     margin: 30px;
@@ -47,8 +42,6 @@
 .blocks
 {
     background-color: darkblue;
-    padding: 10px;
-    margin: 20px;
     width: 200px;
 }
 .block2 {
@@ -56,4 +49,7 @@
 }
 .mt-20 {
     margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    
 }
